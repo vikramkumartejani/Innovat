@@ -1,0 +1,235 @@
+@use "sass:color";
+@use "node_modules/bootstrap/scss/bootstrap" as *; // Bootstrap SCSS import
+@import url("./reset.css");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--color: #98a4d7;
+}
+
+.roboto-regular {
+	font-family: "Roboto", serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+.roboto-medium {
+	font-family: "Roboto", serif;
+	font-weight: 500;
+	font-style: normal;
+}
+
+.roboto-bold {
+	font-family: "Roboto", serif;
+	font-weight: 700;
+	font-style: normal;
+}
+
+.roboto-black {
+	font-family: "Roboto", serif;
+	font-weight: 900;
+	font-style: normal;
+}
+
+$color0: #98a4d7;
+$color1: #f6f5f4;
+$color2: #94a9fc;
+$color3: #42598e;
+$color4: #7f8994;
+$color5: #161a25;
+$superdark: $color5;
+$border: rgba(148, 168, 253, 0.08);
+$borderLight: rgba(148, 168, 253, 0.2);
+$borderMedium: rgba(148, 168, 253, 0.5);
+
+body {
+	font-family: "Roboto", serif !important;
+	font-weight: 400;
+	color: $color0 !important;
+	height: 100%;
+	background: linear-gradient(270deg, #111213 0%, #393e4f 100%);
+	font-size: 16px;
+	line-height: 130% !important;
+	z-index: 1;
+}
+
+header,
+.main,
+footer {
+	background: linear-gradient(270deg, #111213 0%, #393e4f 100%);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Roboto", serif !important;
+	font-weight: 700;
+	color: $color0;
+	line-height: 130% !important;
+}
+
+a {
+	color: $color0 !important;
+}
+img {
+	max-width: 100%;
+	object-fit: cover;
+}
+
+// .gradient-background {
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 100%;
+//   background: linear-gradient(0deg, #3c3f45 0%, #24252b 100%);
+//   background-attachment: fixed;
+//   z-index: -1;
+// }
+
+.icontainer {
+	width: 100%;
+	overflow: hidden;
+	// background: linear-gradient(270deg, #25272b 0%, #373a41 100%);
+	background: linear-gradient(270deg, #111213 0%, #393e4f 100%);
+
+	&.footer {
+		// background: linear-gradient(0deg, #3c3f45 0%, #24252b 100%);
+		background: var(
+			--Innovat_Header_Latest,
+			linear-gradient(270deg, #000 0%, #393e4f 100%)
+		);
+	}
+	&.navbar-main {
+		// background: linear-gradient(0deg, #3c3f45 0%, #24252b 100%);
+		background: var(
+			--Innovat_Header_Latest,
+			linear-gradient(270deg, #000 0%, #393e4f 100%)
+		);
+	}
+	&.about_hero {
+		// background: url(../../public/assets/images/about-hero-bg.png) no-repeat
+		// 	center center/cover;
+	}
+
+	@media screen and (min-width: 1280px) {
+		max-width: 1280px;
+		margin: 0 auto;
+	}
+}
+
+.content {
+	padding-top: 80px;
+	height: 100vh;
+}
+
+.border {
+	border: 1px solid $color0 !important;
+}
+
+.fw-400 {
+	font-weight: 400;
+}
+.fw-500 {
+	font-weight: 500;
+}
+.fw-700 {
+	font-weight: 700;
+}
+.fw-900 {
+	font-weight: 900;
+}
+
+.py-42 {
+	padding-top: 42px;
+	padding-bottom: 42px;
+}
+
+.gap-42 {
+	gap: 42px;
+}
+
+.color0 {
+	color: $color0;
+}
+.color1 {
+	color: $color1;
+}
+.color2 {
+	color: $color2;
+}
+.color3 {
+	color: $color3;
+}
+.color4 {
+	color: $color4;
+}
+.color5 {
+	color: $color5;
+}
+
+.mb--20 {
+	margin-bottom: -20px;
+
+	@media (max-width: 575.98px) {
+		margin-bottom: 0;
+	}
+}
+.main-content {
+	min-height: 100vh;
+}
+
+.outline-btn {
+	font-size: 20px;
+	font-weight: 700;
+	text-transform: capitalize;
+	padding: 20px 40px;
+	background: transparent;
+	color: #8a95c2;
+	border: 1px solid $color0;
+	border-radius: 10px;
+	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+	line-height: 120%;
+
+	@media (max-width: 768px) {
+		font-size: 16px;
+		padding: 15px 30px;
+	}
+}
+
+.termsConditionBox {
+	margin-top: 40px;
+}
+.legalDisclaimerBox {
+	margin-top: 30px;
+
+	@media (max-width: 768px) {
+		margin-top: 20px;
+	}
+}
+.privacyPolicyBox {
+	margin-top: 30px;
+
+	@media (max-width: 768px) {
+		margin-top: 30px;
+	}
+}
+.termsBox {
+	margin-top: 30px;
+
+	@media (max-width: 768px) {
+		margin-top: 20px;
+	}
+}
+
+/* .scroll-to-top {
+} */

@@ -1,0 +1,383 @@
+@use "@/app/styles/index.scss" as *;
+
+.sub-section-header {
+	background-color: $color0;
+	font-size: 36px;
+	font-weight: 700;
+	line-height: 120%;
+	text-transform: capitalize;
+	padding: 20px 30px;
+	color: #313644;
+}
+@media screen and (max-width: 1024px) {
+.sub-section-header {
+	font-size: 20px;
+	padding: 15px 20px;
+}
+}
+.contact-section {
+	padding: 20px 30px 109px;
+	color: $color0;
+	.contact-form-section-row {
+		gap: 70px;
+	}
+	.company-info {
+		h2 {
+			color: $color0;
+			font-size: 24px;
+			font-style: normal;
+			font-weight: 900;
+			line-height: 130%;
+			padding-bottom: 12px;
+			margin-bottom: 12px;
+			border-bottom: 1px dashed $color0;
+		}
+
+		.info-group {
+			padding-bottom: 12px;
+			margin-bottom: 12px;
+			border-bottom: 1px dashed $color0;
+
+			&.last {
+				border-bottom: none;
+				padding-bottom: 0;
+				margin-bottom: 0;
+			}
+
+			h3 {
+				color: $color0;
+				font-size: 15px;
+				font-weight: 700;
+				line-height: 130%;
+				margin: 0;
+				margin-bottom: 6px;
+			}
+
+			p {
+				color: $color0;
+				font-size: 15px;
+				font-weight: 400;
+				line-height: 130%;
+				margin: 0;
+			}
+		}
+
+		.social-media {
+			margin-top: 41px;
+			.social-list {
+				margin-top: 20px;
+			}
+			h3 {
+				color: $color0;
+				font-size: 24px;
+				font-style: normal;
+				font-weight: 900;
+				line-height: 130%;
+				padding-bottom: 12px;
+				margin-bottom: 12px;
+				border-bottom: 1px dashed $color0;
+			}
+
+			p {
+				color: $color0;
+				font-size: 15px;
+				font-weight: 400;
+				line-height: 130%;
+				margin: 0;
+			}
+			ul {
+				li {
+					margin-bottom: 20px;
+					span {
+						font-weight: 700;
+					}
+				}
+			}
+			.social-links {
+				display: flex;
+				gap: 15px;
+				margin-top: 27px;
+
+				a {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					border-radius: 50%;
+					transition: background-color 0.3s ease;
+				}
+				img {
+					width: 35px;
+					height: 35px;
+				}
+			}
+		}
+	}
+
+	.enquiry-form {
+		.contact-form {
+			display: flex;
+			flex-direction: column;
+			gap: 20px;
+		}
+
+		h2 {
+			color: $color0;
+			font-size: 24px;
+			font-style: normal;
+			font-weight: 900;
+			line-height: 130%;
+			padding-bottom: 12px;
+			margin-bottom: 12px;
+			border-bottom: 1px dashed $color0;
+		}
+		.label {
+			color: $color0;
+			font-size: 16px;
+			font-weight: 500;
+			line-height: 120%;
+			text-transform: capitalize;
+			margin-bottom: 6px;
+		}
+		.form-control {
+			border-radius: 8px;
+			border: 1px solid rgb(152, 164, 215, 0.5) !important;
+			// background: linear-gradient(0deg, #3c3f45 0%, #24252b 100%);
+			background: linear-gradient(
+				270deg,
+				rgb(34, 37, 43, 0.5) 0%,
+				rgb(59, 66, 86, 0.5) 100%
+			);
+			padding: 16px 20px;
+			color: #98a4d7 !important;
+
+			&::placeholder {
+				color: #98a4d7 !important;
+				opacity: 0.5 !important;
+				font-size: 15px;
+				font-weight: 500;
+			}
+
+			&:focus {
+				outline: none;
+				border: 1px solid $color0 !important;
+				box-shadow: none !important;
+			}
+
+			&:active {
+				outline: none;
+			}
+		}
+		.form-select {
+			border-radius: 8px;
+			border: 1px solid #98a4d7 !important;
+			opacity: 0.5;
+			background: linear-gradient(270deg, #22252b 0%, #3b4256 100%);
+			padding: 16px 20px;
+			color: $color0;
+
+			option {
+				background: #24252b;
+				color: $color0;
+				font-size: 15px;
+				font-weight: 500;
+				padding: 10px;
+			}
+
+			&::placeholder {
+				color: $color0;
+				font-size: 15px;
+				font-weight: 500;
+			}
+
+			&:focus {
+				outline: none;
+				border: 1px solid $color0 !important;
+				box-shadow: none !important;
+			}
+		}
+		.dropdown-toggle {
+			border-radius: 8px;
+			border: 1px solid #98a4d7 !important;
+			opacity: 0.5;
+			background: linear-gradient(270deg, #22252b 0%, #3b4256 100%);
+			padding: 16px 20px;
+			color: $color0;
+			width: 100%;
+			text-align: start;
+			&::after {
+				border: none;
+				background-image: url(/public/assets/images/arrow.svg);
+				background-size: 16px;
+				width: 16px;
+				height: 20px;
+				background-repeat: no-repeat;
+				position: absolute;
+				right: 16px;
+			}
+
+			&:focus {
+				outline: none;
+				border: 1px solid $color0 !important;
+				box-shadow: none !important;
+			}
+		}
+		.dropdown-menu {
+			background: #3b4256;
+			width: 100%;
+			border: none;
+			border-radius: 16px;
+			.dropdown-item {
+				padding: 7px 16px;
+				font-weight: 700;
+				&:active {
+					background-color: transparent;
+					color: #98a4d7;
+				}
+				&:first-child {
+					border-top-left-radius: 4px;
+					border-top-right-radius: 6px;
+				}
+				&:last-child {
+					border-bottom-left-radius: 8px;
+					border-bottom-right-radius: 8px;
+				}
+				&:hover {
+					background-color: #98a4d7;
+					color: #33363e !important;
+				}
+				&::-webkit-scrollbar {
+					display: none;
+				}
+			}
+		}
+		.dropdown-2 .dropdown-menu {
+			height: 192px;
+			overflow-y: scroll;
+			-ms-overflow-style: none; /* IE and Edge */
+			scrollbar-width: none; /* Firefox */
+		}
+		.btn-submit {
+			border-radius: 8px;
+			border: 1px solid rgba(152, 164, 215, 0.5);
+			background: linear-gradient(270deg, #111213 0%, #3b4256 100%);
+			color: $color0;
+			padding: 16px 50px;
+			font-size: 15px;
+			font-weight: 500;
+			line-height: 120%;
+			text-transform: capitalize;
+			transition: opacity 0.3s ease;
+			margin-top: 7px;
+
+			&:hover {
+				opacity: 0.9;
+			}
+		}
+	}
+
+	@media screen and (max-width: 992px) {
+		padding: 10px 20px 50px 20px;
+		.gaps {
+			gap: 20px;
+		}
+	}
+
+	@media screen and (max-width: 768px) {
+		.contact-form-section-row {
+			flex-direction: column;
+			gap: 20px;
+		}
+		.company-info {
+			h2 {
+				font-size: 24px;
+			}
+			.info-group {
+				padding-bottom: 6px;
+				margin-bottom: 6px;
+			}
+			.info-group.last {
+				padding-bottom: 0 !important;
+				margin-bottom: 0 !important;
+			}
+			.social-media {
+				h3 {
+					font-size: 24px;
+				}
+				p {
+					font-size: 14px;
+				}
+				ul {
+					li {
+						span {
+							font-size: 14px;
+						}
+					}
+				}
+				.social-links {
+					display: flex;
+					gap: 15px;
+					margin-top: 27px;
+
+					a {
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						border-radius: 50%;
+						transition: background-color 0.3s ease;
+					}
+					img {
+						fill: #98a4d7;
+						height: 35px !important;
+					}
+				}
+			}
+		}
+		.enquiry-form {
+			h2 {
+				font-size: 24px;
+			}
+			.label {
+				margin-bottom: 4px;
+			}
+			.form-control {
+				padding: 12px 16px;
+				&::placeholder {
+					font-size: 14px;
+				}
+			}
+			.form-select {
+				padding: 12px 16px;
+				&::placeholder {
+					font-size: 14px;
+				}
+			}
+			.btn-submit {
+				padding: 12px 40px;
+				font-size: 14px;
+			}
+		}
+	}
+}
+
+.thank-you-text {
+	color: $color0;
+	text-align: center;
+	font-size: 26px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 120%;
+	max-width: 50%;
+
+	@media (max-width: 768px) {
+		max-width: 90%;
+		font-size: 18px;
+	}
+}
+
+@media (min-width: 992px) {
+	.g-lg-7,
+	.g-lg-5,
+	.g-lg-5.row {
+		--bs-gutter-x: 70px !important;
+	}
+}

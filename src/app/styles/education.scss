@@ -1,0 +1,82 @@
+@use "@/app/styles/index.scss" as * ;
+
+.education-section {
+	.sub-section {
+		padding: 20px 30px 50px;
+	}
+	.section-header {
+		background: $color0;
+		color: #33363e;
+		font-size: 36px;
+		font-weight: 700;
+		line-height: 120%;
+		padding: 23px 0 24px 37px;
+		margin-bottom: 14px;
+		h2 {
+			margin: 0;
+		}
+	}
+
+	.education-content-row {
+		gap: 71px;
+	}
+
+	.sub-section-header {
+		background-color: $color0;
+		font-size: 36px;
+		font-weight: 700;
+		line-height: 120%;
+		text-transform: capitalize;
+		padding: 20px 30px;
+		color: #313644;
+	}
+	.education-category {
+		margin-bottom: 40px;
+
+		h3 {
+			color: $color0;
+			font-size: 24px;
+			font-weight: 900;
+			line-height: 130%;
+			padding-bottom: 12px;
+			margin-bottom: 12px;
+			border-bottom: 1px dashed $color0;
+		}
+
+		p {
+			color: $color0;
+			font-size: 15px;
+			font-weight: 400;
+			line-height: 130%;
+			margin: 0;
+		}
+	}
+
+	@media screen and (max-width: 768px) {
+		.sub-section-header {
+			font-size: 20px;
+			padding: 15px 20px;
+		}
+		.sub-section {
+			padding: 20px 20px 50px 20px;
+		}
+		.section-header {
+			font-size: 24px;
+			padding: 23px 0 24px 20px;
+		}
+		.education-content-row {
+			gap: 20px;
+		}
+		.education-category {
+			margin-bottom: 20px;
+			h3 {
+				font-size: 20px;
+				padding-bottom: 12px;
+				margin-bottom: 12px;
+			}
+			p {
+				font-size: 14px;
+			}
+		}
+	}
+}

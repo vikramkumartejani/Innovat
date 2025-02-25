@@ -1,0 +1,32 @@
+@import "@/app/styles/index.scss";
+
+.other-page {
+	.wrapper-section {
+		padding: 45px 45px 45px;
+	}
+	.pera {
+		// letter-spacing: 20.8;
+		line-height: 130%;
+	}
+
+	.pera b {
+		text-transform: capitalize;
+	}
+
+	.privacy-ul {
+		padding-left: 0;
+		margin-left: 15px;
+	}
+	li {
+		list-style: disc;
+	}
+	.headline {
+		border-bottom: 1px dashed $color0;
+	}
+
+	@media screen and (max-width: 768px) {
+		.wrapper-section {
+			padding: 40px 20px 40px 20px !important;
+		}
+	}
+}

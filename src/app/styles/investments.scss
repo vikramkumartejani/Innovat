@@ -1,0 +1,265 @@
+@use "@/app/styles/index.scss" as *;
+
+
+.categories-grid {
+	display: grid;
+	grid-template-columns: 1fr 30px 1fr;
+	width: 100%;
+  }
+  
+  .category {
+	margin-bottom: 30px;
+	grid-column: auto / span 1;
+  }
+  
+  .category:nth-child(2n) {
+	grid-column: 3;
+  }
+  
+  .category:nth-child(2n - 1) {
+	grid-column: 1;
+  }
+  
+  .category h3 {
+	color: var(--color0, #b8c7e0);
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 900;
+	line-height: 120%;
+	margin-bottom: 12px;
+	padding-bottom: 12px;
+	border-bottom: 1px dashed var(--color0, #b8c7e0);
+  }
+  
+  .category p {
+	color: var(--color0, #b8c7e0);
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 120%;
+	margin: 0;
+  }
+  
+  @media screen and (max-width: 768px) {
+	.categories-grid {
+	  grid-template-columns: 1fr;
+	}
+  
+	.category:nth-child(n) {
+	  grid-column: 1;
+	}
+  }
+
+
+.sub-section-header {
+	background-color: $color0;
+	font-size: 36px;
+	font-weight: 700;
+	line-height: 120%;
+	text-transform: capitalize;
+	padding: 20px 30px;
+	color: #313644;
+}
+@media screen and (max-width: 1024px) {
+	.sub-section-header {
+		font-size: 20px;
+		padding: 15px 20px;
+		margin-bottom: 5px;
+	}
+}
+.investment-categories {
+	padding: 32px 30px 107px;
+	padding-bottom: 15px;
+	color: #fff;
+
+	video {
+		object-fit: cover;
+		object-position: center;
+	}
+	.header-text {
+		color: $color0;
+		text-align: center;
+		font-size: 32px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 120%;
+		width: 1034px;
+		margin: auto;
+		margin-bottom: 50px;
+		text-align: center;
+
+		@media screen and (max-width: 1024px) {
+			width: 100%;
+		}
+	}
+	.categories-row {
+		gap: 71px;
+	}
+	.category {
+		margin-bottom: 30px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		h3 {
+			color: $color0;
+			font-size: 24px;
+			font-style: normal;
+			font-weight: 900;
+			line-height: 120%;
+			margin-bottom: 12px;
+			padding-bottom: 12px;
+			border-bottom: 1px dashed $color0;
+		}
+
+		p {
+			color: $color0;
+			font-size: 16px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 120%;
+		}
+		@media screen and (max-width: 1024px) {
+			&:last-child {
+				margin-bottom: 30px;
+			}
+		}
+	}
+
+	.transformation-header {
+		color: $color0;
+		font-size: 20px;
+		font-style: normal;
+		font-weight: 900;
+		line-height: 120%;
+		text-transform: uppercase;
+		border-bottom: 1px solid $color0;
+		margin-bottom: 34px;
+		margin-top: 5px;
+		padding: 13px 1009.973px 2.797px 0px;
+	}
+
+	@media screen and (max-width: 992px) {
+		padding: 25px 20px;
+		.categories-row {
+			gap: 20px;
+		}
+		.header-text {
+			width: 100%;
+			font-size: 20px;
+			margin-bottom: 30px;
+		}
+		.transformation-header {
+			margin: 20px 0;
+			margin-top: 15px;
+		}
+	}
+}
+
+// investment funds
+
+.investment-funds-section {
+	.section-content {
+		padding: 40px 45px;
+	}
+	.section-header {
+		background: $color0;
+		color: #33363e;
+		font-size: 36px;
+		font-weight: 700;
+		line-height: 120%;
+		padding: 25px 0 27px 45px;
+		h2 {
+			margin: 0;
+		}
+	}
+
+	.section-subheader {
+		color: $color0;
+		font-size: 32px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 120%;
+		margin-bottom: 14px;
+		span {
+			font-weight: 900;
+		}
+	}
+
+	.section-description {
+		color: $color0;
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 120%;
+		margin-bottom: 50px;
+	}
+
+	.investment-options {
+		max-width: 984px;
+		margin: 0 auto;
+	}
+
+	.investment-card {
+		border: 1px solid $color0;
+		border-radius: 8px;
+		padding: 0;
+		height: 100%;
+
+		h3 {
+			background: $color0;
+			color: #33363e;
+			text-align: center;
+			font-size: 24px;
+			font-style: normal;
+			font-weight: 700;
+			line-height: 120%;
+			padding: 12px 0;
+			margin: 0;
+			border-radius: 8px 8px 0 0;
+		}
+
+		p {
+			padding: 20px 24px;
+			color: $color0;
+			font-size: 20px;
+			font-weight: 400;
+			line-height: 120%;
+		}
+	}
+
+	@media screen and (max-width: 992px) {
+		.section-content {
+			padding: 40px 20px;
+		}
+		.section-header {
+			font-size: 24px;
+			padding: 20px 0 22px 20px;
+		}
+		.section-subheader {
+			font-size: 20px;
+			margin-bottom: 10px;
+		}
+		.section-description {
+			font-size: 16px;
+			margin-bottom: 30px;
+		}
+		.investment-card {
+			h3 {
+				font-size: 20px;
+				padding: 10px 0;
+			}
+			p {
+				padding: 10px 12px;
+				font-size: 16px;
+			}
+		}
+	}
+}
+.video-box {
+	background: linear-gradient(270deg, #111213 0%, #393e4f 100%);
+	@media screen and (min-width: 1280px) {
+		max-width: 1280px;
+		margin: 0 auto;
+	}
+}

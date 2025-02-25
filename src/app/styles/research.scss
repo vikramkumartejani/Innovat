@@ -1,0 +1,85 @@
+@use "@/app/styles/index.scss" as *;
+
+.research-section {
+	background: linear-gradient(270deg, #111213 0%, #393e4f 100%);
+	.research-content {
+		padding: 20px 30px 53.994px;
+	}
+	.research-row {
+		gap: 71px;
+	}
+	.section-header {
+		background: $color0;
+		color: #33363e;
+		font-size: 36px;
+		font-weight: 700;
+		line-height: 120%;
+		padding: 23px 0 24px 37px;
+		h2 {
+			margin: 0;
+		}
+	}
+
+	.sub-section-header {
+		background-color: $color0;
+		font-size: 36px;
+		font-weight: 700;
+		line-height: 120%;
+		text-transform: capitalize;
+		padding: 20px 30px;
+		color: #313644;
+	}
+
+	.research-category {
+		margin-bottom: 40px;
+
+		h3 {
+			color: $color0;
+			font-size: 24px;
+			font-weight: 900;
+			line-height: 130%;
+			padding-bottom: 12px;
+			margin-bottom: 12px;
+			border-bottom: 1px dashed $color0;
+		}
+
+		p {
+			color: $color0;
+			font-size: 15px;
+			font-weight: 400;
+			line-height: 130%;
+			margin: 0;
+		}
+	}
+
+	@media screen and (max-width: 1024px) {
+		.research-content {
+			padding: 20px 20px 53.994px 20px;
+		}
+		.research-row {
+			gap: 20px;
+		}
+		.section-header {
+			padding: 23px 0 24px 20px;
+		}
+
+		.sub-section-header {
+			font-size: 20px;
+			padding: 15px 20px;
+		}
+
+		.research-category {
+			margin-bottom: 20px;
+
+			h3 {
+				font-size: 20px;
+				padding-bottom: 12px;
+				margin-bottom: 12px;
+			}
+
+			p {
+				font-size: 14px;
+			}
+		}
+	}
+}
