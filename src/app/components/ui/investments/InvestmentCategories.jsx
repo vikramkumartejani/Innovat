@@ -45,22 +45,23 @@ const InvestmentCategories = () => {
             ))}
           </div>
         </div>
-      </div>
-
-      <div className="video-box">
-        {/* <video width="100%" height="720" className="d-block" autoPlay loop muted>
-            <source src="assets/video/hero-video.mp4" type="video/mp4" />
-          </video> */}
-      </div>
-
-      <div className="investment-categories icontainer pt-0 overflow-hidden">
         <img
           width={1280}
           height={771}
-          className="img-fluid mt-2 mb-3"
+          className="img-fluid gap-y"
           src="assets/images/back.jpg"
           alt="back images"
         />
+      </div>
+
+      {/* <div className="video-box"> */}
+        {/* <video width="100%" height="720" className="d-block" autoPlay loop muted>
+            <source src="assets/video/hero-video.mp4" type="video/mp4" />
+          </video> */}
+       
+      {/* </div> */}
+
+      <div className="investment-categories icontainer pt-0 overflow-hidden">
         <div className="transformation-header">TRANSFORMATION</div>
 
         <Row className="g-lg-5">
